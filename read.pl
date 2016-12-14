@@ -5,9 +5,9 @@ print '<head>';
 print '<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />';
 print qq|<meta charset="utf-8">
   <title>jQuery UI Datepicker - Default functionality</title>
-  <link rel="stylesheet" href="//10.128.64.74/js/themes/smoothness/jquery-ui.css">
-  <script src="http://10.128.64.74/js/jquery-1.11.1.js"></script>
-  <script src="http://10.128.64.74/js/jquery-ui-git.js"></script>
+  <link rel="stylesheet" href="//some-url/js/themes/smoothness/jquery-ui.css">
+  <script src="http://some-url/js/jquery-1.11.1.js"></script>
+  <script src="http://some-url/js/jquery-ui-git.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script>
   \$(function() { 
