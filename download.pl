@@ -23,7 +23,7 @@ else
 {
     open(DLFILE, "<$files_location/$ID") || Error('abrir', 'archivo de backup'); 
     @fileholder = <DLFILE>; 
-    close (DLFILE) || Error ('close', 'file'); 
+    close (DLFILE) || Error ('cerrar', 'archivo'); 
 
     open (LOG, ">>$log_location/$ID") || Error('abrir', 'archivo de log');
     print LOG "$ID\n";
