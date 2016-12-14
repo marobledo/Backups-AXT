@@ -31,7 +31,7 @@ sub fecha_ayer()
     {
          $mon="0".$mon;
     }
-    if ($mday > 9) 
+    if ($mday >= 9) 
     {
         return $mday."-".$mon."-".$year;
     }
