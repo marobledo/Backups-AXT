@@ -21,7 +21,7 @@ print "<html><body>";
 
 print "Dame el nombre del respaldo que deseas consultar";
 
-print '<form action="http://10.128.64.74/cgi-bin/backup/download.pl" method="post" >';
+print '<form action="http://some-url/cgi-bin/backup/download.pl" method="post" >';
 print 'Hostname: <input type="text" name="ID">';
 print 'Fecha: <input type="text" id="datepicker">';
 print '<input type="submit" value="Send">';
