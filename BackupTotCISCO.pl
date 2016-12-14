@@ -30,7 +30,7 @@ my $hosts_split = shift @ARGV;
 my $cmdout = "$home/$output/$fecha";
 $cmdout =~ s/( |\||\'|\")//g;
 `mkdir $cmdout`;
-print $cmdout."\n";
+#print $cmdout."\n";
 
 
 # Abrimos los archivos en los cuales vamos a procesar la informacion
@@ -177,7 +177,6 @@ print LOG $fecha." ".$horaactual." termina el script\n";
 
 
 close HOSTS;
-close RESULT;
 close ERROR;
 close RED;
 close LOG;
