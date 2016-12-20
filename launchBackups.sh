@@ -3,7 +3,7 @@
 HOME_HOSTS=/opt/respaldos/command/data/hosts
 HOME_LOGS=/opt/respaldos/command/data/log
 
-#### Borramos los logs del dia anterior ####
+#### Copying yesterday logs to error.log.1 ####
 cp $HOME_LOGS/error.log $HOME_LOGS/error.log.1
 cat /dev/null > $HOME_LOGS/error.log
 
