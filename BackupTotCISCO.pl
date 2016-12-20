@@ -2,9 +2,9 @@
 
 ####
 #
-# Ejecuta Resplados de Equipos CISCO
-# Este script es llamado por un lanzador el cual corre desde el crontab 
-# El argumento que interactua con el programa es un archivo que se genera con el comando 'split'
+# Executes CISCO backups
+# This script is triggered from lauchBachups.sh through crontab
+# The argument is a file that was made with the 'split' command
 #    
 ####
 
@@ -23,8 +23,7 @@ my $output = "output";
 my $log = "log";
 my $red = "red";
 
-
-# Toma el argumento del lanzador
+# Takes the argument
 my $hosts_split = shift @ARGV;
 
 my $cmdout = "$home/$output/$fecha";
@@ -33,7 +32,7 @@ $cmdout =~ s/( |\||\'|\")//g;
 #print $cmdout."\n";
 
 
-# Abrimos los archivos en los cuales vamos a procesar la informacion
+# Opening files to process the information
 open (HOSTS,"<$hosts_split") || die "no puedo abrir archivo de hosts\n";
 open (ERROR,">>$home/$log/error.log") || die "no puedo abrir archivo error log\n"; 
 open (RED,">>$home/$red/red.log") || die "no puedo abrir el archivo red log\n";
