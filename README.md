@@ -8,19 +8,19 @@ At the end users can go and download these from a web page based on CGI.
 Perl modules needed: 
 
 Net::Telnet
-  It is to connect to the equipments.
+It is to connect to the equipments.
 
 fecha.pm 
-  put it into the perl modules path like /usr/lib/perl5/5.8.8/ is used for know the date, hour and yesterday date
+Put it into the perl modules path like /usr/lib/perl5/5.8.8/ is used for know the date, hour and yesterday date
 
 
 Scripts:
 
 launchBackups.sh
-  bash script that launches different backup scripts based on models. It search for equipment into the /etc/hosts and store the output       into a file that then splits into 100 equipments per execution.
+Bash script that launches different backup scripts based on models. It search for equipment into the /etc/hosts and store the output       into a file that then splits into 100 equipments per execution.
 
 BackupTotCISCO.pl
-  It performs CISCO Backups, based on an array of commands and store the output into the server based on hostnames and dates
+It performs CISCO Backups, based on an array of commands and store the output into the server based on hostnames and dates
   
 
   
